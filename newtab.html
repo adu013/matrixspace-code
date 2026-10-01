@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MatrixSpace Code</title>
+
+  <!-- Load the theme engine instantly BEFORE styles to eliminate flashing -->
+  <script src="theme.js"></script>
+
+  <!-- External high-tech typography layers -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dseg@0.46.0/css/dseg.min.css">
+
+  <!-- Decoupled External CSS Stacking -->
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="links.css">
+  <link rel="stylesheet" href="sheets.css">
+</head>
+
+<body>
+  <!-- Preferences Dashboard Trigger Toggle -->
+  <button id="settingsBtn" class="settings-trigger">⚙ CONFIG</button>
+
+  <!-- Global Navigation Infrastructure Header Component -->
+  <header class="matrix-navbar">
+    <div class="nav-logo">&gt;_ MATRIXSPACE CODE // TERMINAL_NODE</div>
+    <div id="matrix-pagination" class="matrix-pagination">
+      <button class="page-dot active" data-page="1" title="WORKSPACE_01">●</button>
+      <button class="page-dot" data-page="2" title="GIT_DEV_CHEAT">○</button>
+      <button class="page-dot" data-page="3" title="LINUX_DEV_CHEAT">○</button>
+      <button class="page-dot" data-page="4" title="VSCODE_DEV_CHEAT">○</button>
+    </div>
+  </header>
+
+  <!-- Configuration Drawer Section Overlay Panel Container -->
+  <div id="settingsPanel" class="settings-panel hidden">
+    <h3>Theme Config</h3>
+    <select id="themeSelector">
+      <option value="matrix-classic">Matrix Midnight</option>
+      <option value="matrix-muted">Matrix Muted (Low Contrast)</option>
+      <option value="cyber-pink">Dark Green / Pink</option>
+      <option value="neon-orange">Dark / Orange</option>
+      <option value="neon-yellow">Dark / Yellow</option>
+      <option value="light-mode">Light Mode</option>
+    </select>
+  </div>
+
+  <!-- Main Dashboard Container -->
+  <div class="dashboard">
+    <!-- PAGE 1: High-Density Workspace Layout Dashboard Module -->
+    <div id="page-view-1" class="page-view">
+      <!-- The 3x3 Links Matrix Infrastructure -->
+      <div id="w2-row-primary-links" class="row row-3col-equal-split"></div>
+      <div id="w2-row-secondary-links" class="row row-3col-equal-split"></div>
+      <div id="w2-row-density-links" class="row row-3col-equal-split"></div>
+
+      <!-- 1-Column Row Container for Custom Copyable Code Snippets -->
+      <div class="row row-1col" style="margin-top: 30px;">
+        <div class="widget custom-snippets-widget">
+          <h3>[ CUSTOM_SNIPPET_LEDGER ]</h3>
+
+          <!-- Form Input Pipeline for Creating New Custom Snippets -->
+          <div class="snippet-form"
+            style="margin-bottom: 25px; border-bottom: 1px dashed rgba(255,255,255,0.15); padding-bottom: 20px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+              <input type="text" id="customTitleInput" placeholder="Snippet Title (e.g. Docker Clean)...">
+              <input type="text" id="customDescInput" placeholder="Short Description...">
+            </div>
+            <div style="display: flex; gap: 10px;">
+              <input type="text" id="customCodeInput" placeholder="Code Terminal Script Command..."
+                style="flex-grow: 1;">
+              <button id="addCustomSnippetBtn" class="add-link-btn" style="padding: 6px 16px;">INJECT NODE</button>
+            </div>
+          </div>
+
+          <!-- Output Area Canvas for Saved Custom Code Snippets -->
+          <div id="customSnippetsCanvas" class="canvas-area">
+            <!-- Render engine will inject custom card templates directly here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 2: Git Command Workspace Module -->
+    <div id="page-view-2" class="page-view hidden">
+      <div class="widget search-widget">
+        <input type="text" id="gitSearchInput" class="search-input"
+          placeholder="SEARCH GIT REFERENCE DATA COMMAND MODULES...">
+      </div>
+
+      <div class="dev-layout">
+        <div class="widget sidebar-menu" id="gitSidebar">
+          <h3>Git System Modules</h3>
+          <button class="sidebar-item active" data-category="all">⚡ All Node Commands</button>
+          <button class="sidebar-item" data-category="setup">🛠️ Identity & Init</button>
+          <button class="sidebar-item" data-category="snapshot">📦 Stage & Commit</button>
+          <button class="sidebar-item" data-category="branch">🔀 Branch Matrix</button>
+          <button class="sidebar-item" data-category="undo">⚠️ Terminal Recovery</button>
+          <button class="sidebar-item" data-category="stash">💾 Cache Stash</button>
+        </div>
+
+        <div class="canvas-area" id="gitSnippetCanvas"></div>
+      </div>
+    </div>
+
+    <!-- PAGE 3: Linux System Command Workspace Module -->
+    <div id="page-view-3" class="page-view hidden">
+      <div class="widget search-widget">
+        <input type="text" id="linuxSearchInput" class="search-input" placeholder="SEARCH LINUX CORE COMMAND SHELLS...">
+      </div>
+
+      <div class="dev-layout">
+        <div class="widget sidebar-menu" id="linuxSidebar">
+          <h3>Linux Subsystems</h3>
+          <button class="sidebar-item active" data-category="all">⚡ All Bash Commands</button>
+          <button class="sidebar-item" data-category="file">📁 Files & Directories</button>
+          <button class="sidebar-item" data-category="network">🌐 Network Routing</button>
+          <button class="sidebar-item" data-category="system">⚙️ System & Metrics</button>
+          <button class="sidebar-item" data-category="perm">🔒 Security Access</button>
+        </div>
+
+        <div class="canvas-area" id="linuxSnippetCanvas"></div>
+      </div>
+    </div>
+
+    <!-- PAGE 4: VS Code Workspace Key Shortcut Reference Module -->
+    <div id="page-view-4" class="page-view hidden">
+      <div class="widget search-widget">
+        <input type="text" id="vscodeSearchInput" class="search-input"
+          placeholder="SEARCH VS CODE KEY SHORTCUTS (e.g. prompt, comment, cursor)...">
+      </div>
+
+      <div class="dev-layout">
+        <div class="widget sidebar-menu" id="vscodeSidebar">
+          <h3>VS Code Keymaps</h3>
+          <button class="sidebar-item active" data-category="all">⚡ All Shortcuts</button>
+          <button class="sidebar-item" data-category="nav">🧭 Core Navigation</button>
+          <button class="sidebar-item" data-category="edit">📝 Text Operations</button>
+          <button class="sidebar-item" data-category="view">🖥️ UI & Terminal</button>
+          <button class="sidebar-item" data-category="search">🔍 Global Query</button>
+        </div>
+
+        <div class="canvas-area" id="vscodeSnippetCanvas"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="links-page.js"></script>
+  <script src="custom-snippets.js"></script>
+  <script src="git-page.js"></script>
+  <script src="linux.js"></script>
+  <script src="vscode.js"></script>
+  <script src="render-engine.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

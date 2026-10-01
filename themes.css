@@ -1,0 +1,156 @@
+/* --- matrix-classic (Matrix Midnight) --- */
+html[data-theme="matrix-classic"],
+body,
+body[data-theme="matrix-classic"] {
+  background-color: #0d0e12;
+  color: #00ff66;
+}
+
+html[data-theme="matrix-classic"] .widget,
+html[data-theme="matrix-classic"] .settings-panel,
+html[data-theme="matrix-classic"] .snippet-card,
+body[data-theme="matrix-classic"] .widget,
+body[data-theme="matrix-classic"] .settings-panel,
+body[data-theme="matrix-classic"] .snippet-card {
+  background-color: #141721;
+  border: 1px solid #00ff66;
+  color: #00ff66;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.08);
+}
+
+html[data-theme="matrix-classic"] select,
+body[data-theme="matrix-classic"] select {
+  background-color: #0d0e12;
+  border: 1px solid #00ff66;
+  color: #00ff66;
+}
+
+/* --- matrix-muted (Low Contrast Dark Slate / Blue Muted Font) --- */
+html[data-theme="matrix-muted"],
+body[data-theme="matrix-muted"] {
+  background-color: #1a1c23;
+  color: #879bb0;
+}
+
+html[data-theme="matrix-muted"] .widget,
+html[data-theme="matrix-muted"] .settings-panel,
+html[data-theme="matrix-muted"] .snippet-card,
+body[data-theme="matrix-muted"] .widget,
+body[data-theme="matrix-muted"] .settings-panel,
+body[data-theme="matrix-muted"] .snippet-card {
+  background-color: #222530;
+  border: 1px solid #4a5263;
+  color: #879bb0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+html[data-theme="matrix-muted"] select,
+body[data-theme="matrix-muted"] select {
+  background-color: #1a1c23;
+  border: 1px solid #4a5263;
+  color: #879bb0;
+}
+
+/* --- cyber-pink (Dark Green / Pink) --- */
+html[data-theme="cyber-pink"],
+body[data-theme="cyber-pink"] {
+  background-color: #091f11;
+  color: #ff66cc;
+}
+
+html[data-theme="cyber-pink"] .widget,
+html[data-theme="cyber-pink"] .settings-panel,
+html[data-theme="cyber-pink"] .snippet-card,
+body[data-theme="cyber-pink"] .widget,
+body[data-theme="cyber-pink"] .settings-panel,
+body[data-theme="cyber-pink"] .snippet-card {
+  background-color: #0e2e1a;
+  border: 1px solid #ff66cc;
+  color: #ff66cc;
+  box-shadow: 0 0 10px rgba(255, 102, 204, 0.08);
+}
+
+html[data-theme="cyber-pink"] select,
+body[data-theme="cyber-pink"] select {
+  background-color: #06170d;
+  border: 1px solid #ff66cc;
+  color: #ff66cc;
+}
+
+/* --- neon-orange (Dark Background / Orange Font) --- */
+html[data-theme="neon-orange"],
+body[data-theme="neon-orange"] {
+  background-color: #111111;
+  color: #ff6600;
+}
+
+html[data-theme="neon-orange"] .widget,
+html[data-theme="neon-orange"] .settings-panel,
+html[data-theme="neon-orange"] .snippet-card,
+body[data-theme="neon-orange"] .widget,
+body[data-theme="neon-orange"] .settings-panel,
+body[data-theme="neon-orange"] .snippet-card {
+  background-color: #1a1a1a;
+  border: 1px solid #ff6600;
+  color: #ff6600;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.08);
+}
+
+html[data-theme="neon-orange"] select,
+body[data-theme="neon-orange"] select {
+  background-color: #0a0a0a;
+  border: 1px solid #ff6600;
+  color: #ff6600;
+}
+
+/* --- neon-yellow (Dark Background / Neon Yellow) --- */
+html[data-theme="neon-yellow"],
+body[data-theme="neon-yellow"] {
+  background-color: #141414;
+  color: #e6ff00;
+}
+
+html[data-theme="neon-yellow"] .widget,
+html[data-theme="neon-yellow"] .settings-panel,
+html[data-theme="neon-yellow"] .snippet-card,
+body[data-theme="neon-yellow"] .widget,
+body[data-theme="neon-yellow"] .settings-panel,
+body[data-theme="neon-yellow"] .snippet-card {
+  background-color: #1f1f1f;
+  border: 1px solid #e6ff00;
+  color: #e6ff00;
+  box-shadow: 0 0 10px rgba(230, 255, 0, 0.08);
+}
+
+html[data-theme="neon-yellow"] select,
+body[data-theme="neon-yellow"] select {
+  background-color: #0c0c0c;
+  border: 1px solid #e6ff00;
+  color: #e6ff00;
+}
+
+/* --- light-mode (Light Background / Dark Font) --- */
+html[data-theme="light-mode"],
+body[data-theme="light-mode"] {
+  background-color: #f4f5f7;
+  color: #1a1a24;
+}
+
+html[data-theme="light-mode"] .widget,
+html[data-theme="light-mode"] .settings-panel,
+html[data-theme="light-mode"] .snippet-card,
+body[data-theme="light-mode"] .widget,
+body[data-theme="light-mode"] .settings-panel,
+body[data-theme="light-mode"] .snippet-card {
+  background-color: #ffffff;
+  border: 1px solid #d0d2d8;
+  color: #1a1a24;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+html[data-theme="light-mode"] select,
+body[data-theme="light-mode"] select {
+  background-color: #fafbfc;
+  border: 1px solid #b8bac2;
+  color: #1a1a24;
+}
